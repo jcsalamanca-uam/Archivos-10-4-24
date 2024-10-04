@@ -1,0 +1,16 @@
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\bin\Debug\net8.0-windows\ArchivosForms.exe
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\bin\Debug\net8.0-windows\ArchivosForms.deps.json
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\bin\Debug\net8.0-windows\ArchivosForms.runtimeconfig.json
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\bin\Debug\net8.0-windows\ArchivosForms.dll
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\bin\Debug\net8.0-windows\ArchivosForms.pdb
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\obj\Debug\net8.0-windows\ArchivosForms.Form1.resources
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\obj\Debug\net8.0-windows\ArchivosForms.csproj.GenerateResource.cache
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\obj\Debug\net8.0-windows\ArchivosForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\obj\Debug\net8.0-windows\ArchivosForms.AssemblyInfoInputs.cache
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\obj\Debug\net8.0-windows\ArchivosForms.AssemblyInfo.cs
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\obj\Debug\net8.0-windows\ArchivosForms.csproj.CoreCompileInputs.cache
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\obj\Debug\net8.0-windows\ArchivosForms.dll
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\obj\Debug\net8.0-windows\refint\ArchivosForms.dll
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\obj\Debug\net8.0-windows\ArchivosForms.pdb
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\obj\Debug\net8.0-windows\ArchivosForms.genruntimeconfig.cache
+C:\Users\Julio\Documents\10 4 24\ArchivosForms\ArchivosForms\obj\Debug\net8.0-windows\ref\ArchivosForms.dll
