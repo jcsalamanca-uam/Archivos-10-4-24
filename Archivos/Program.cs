@@ -1,50 +1,55 @@
 ﻿using System;
-internal class Program
+using System.IO;
+
+namespace Ejarcbinario1
 {
-    private void main()
+    internal class Program
     {
-        FileStream mArchivoEscritor = new FileStream("datos.dat", FileMode.OpenOrCreate, FileAccess.Write);
-        using (BinaryWriter Escritor = new BinaryWriter(mArchivoEscritor))
+        static void Main(string[] args)
         {
-            for (int i = 0; i < 3; i++)
+            FileStream mArchivoEscritor = new FileStream("datos.dat", FileMode.OpenOrCreate, FileAccess.Write);
+            using (BinaryWriter Escritor = new BinaryWriter(mArchivoEscritor))
             {
-                Console.WriteLine("Ingrese el nombre: ");
-                string nombre = Console.ReadLine();
-                Console.WriteLine("Ingrese la edad: ");
-                int edad = int.Parse(Console.ReadLine());
-                Console.WriteLine("Ingrese la nota: ");
-                int nota = int.Parse(Console.ReadLine());
-                Console.WriteLine("Ingrese el género: ");
-                char genero = char.Parse(Console.ReadLine());
+                for (int i = 0; i < 3; i++)
+                {
+                    Console.WriteLine("Ingrese el nombre: ");
+                    string nombre = Console.ReadLine();
+                    Console.WriteLine("Ingrese la edad: ");
+                    int edad = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Ingrese la nota: ");
+                    int nota = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Ingrese el género: ");
+                    char genero = char.Parse(Console.ReadLine());
 
-                Escritor.Write(nombre.Length); // Escribimos la longitud del nombre
-                Escritor.Write(nombre.ToCharArray()); // Escribimos el nombre como arreglo de caracteres
-                Escritor.Write(edad);
-                Escritor.Write(nota);
-                Escritor.Write(genero);
+                    Escritor.Write(nombre.Length); // Escribimos la longitud del nombre
+                    Escritor.Write(nombre.ToCharArray()); // Escribimos el nombre como arreglo de caracteres
+                    Escritor.Write(edad);
+                    Escritor.Write(nota);
+                    Escritor.Write(genero);
+                }
             }
-        }
 
-        // Lectura del archivo binario
-        FileStream mArchivoLector = new FileStream("datos.dat", FileMode.Open, FileAccess.Read);
-        using (BinaryReader Lector = new BinaryReader(mArchivoLector))
-        {
-            while (mArchivoLector.Position != mArchivoLector.Length)
+            // Lectura del archivo binario
+            FileStream mArchivoLector = new FileStream("datos.dat", FileMode.Open, FileAccess.Read);
+            using (BinaryReader Lector = new BinaryReader(mArchivoLector))
             {
-                int length = Lector.ReadInt32(); // Leemos la longitud del nombre
-                char[] nombreArray = Lector.ReadChars(length); // Leemos el nombre
-                string nombre = new string(nombreArray); // Convertimos a string
-                int edad = Lector.ReadInt32();
-                int nota = Lector.ReadInt32();
-                char genero = Lector.ReadChar();
+                while (mArchivoLector.Position != mArchivoLector.Length)
+                {
+                    int length = Lector.ReadInt32(); // Leemos la longitud del nombre
+                    char[] nombreArray = Lector.ReadChars(length); // Leemos el nombre
+                    string nombre = new string(nombreArray); // Convertimos a string
+                    int edad = Lector.ReadInt32();
+                    int nota = Lector.ReadInt32();
+                    char genero = Lector.ReadChar();
 
-                Console.WriteLine("Nombre: " + nombre);
-                Console.WriteLine("Edad: " + edad);
-                Console.WriteLine("Nota: " + nota);
-                Console.WriteLine("Género: " + genero);
-                Console.WriteLine("");
+                    Console.WriteLine("Nombre: " + nombre);
+                    Console.WriteLine("Edad: " + edad);
+                    Console.WriteLine("Nota: " + nota);
+                    Console.WriteLine("Género: " + genero);
+                    Console.WriteLine("");
+                }
             }
+            Console.ReadKey();
         }
-        Console.ReadKey();
     }
-} 
+}
